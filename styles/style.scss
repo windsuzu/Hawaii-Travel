@@ -65,14 +65,14 @@ main {
 
         h3 {
             color: white;
-            font-size: 3rem;
+            font-size: 2.5rem;
             margin: 18px;
         }
 
         button.start {
             border: none;
             color: white;
-            padding: 1.35rem 2.2rem;
+            padding: 1.2rem 1.8rem;
             font-size: 1.8rem;
             border-radius: 1rem;
             background-color: #3bf0e5;
@@ -81,7 +81,7 @@ main {
 
         div.filter {
             width: 100%;
-            height: 90vh;
+            height: 80vh;
             background-color: rgba(0, 0, 0, 0.2);
             position: absolute;
             top: 0;
@@ -89,6 +89,60 @@ main {
         }
     }
 
+    section.feature {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+
+        h2 {
+            font-size: 2rem;
+            margin: 1rem 0;
+        }
+
+        section.cards {
+            width: 80%;
+            min-height: 75vh;
+            display: flex;
+            flex-flow: row wrap;
+
+            div.card {
+                flex: 1 1 300px;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: space-around;
+                align-items: center;
+                padding: 1rem;
+
+                img {
+                    border-radius: 50%;
+                    width: 15vw;
+                    height: 15vw;
+                    margin: 1rem 0;
+                }
+
+                h4 {
+                    font-size: 1.35rem;
+                    margin: 1rem 0;
+                }
+
+                p {
+                    font-size: 1.25rem;
+                    margin: 1rem 0;
+                }
+
+                a {
+                    font-size: 1.3rem;
+                    text-decoration: none;
+                    color: white;
+                    padding: 1.2rem 1.6rem;
+                    background-color: #09777d;
+                    margin: 1rem 0;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 380px) {
@@ -98,5 +152,20 @@ main {
 
     header nav ul li a {
         font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    main {
+        section.feature {
+            section.cards {
+                div.card {
+                    img {
+                        width: 45vw;
+                        height: 45vw;
+                    }
+                }
+            }
+        }
     }
 }

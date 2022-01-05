@@ -67,6 +67,55 @@ header nav ul li a {
   font-size: 1.4rem;
 }
 
+main section.cover {
+  min-height: 90vh;
+  width: 100%;
+  background-image: url("../img/cover.jpeg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+
+main section.cover h3 {
+  color: white;
+  font-size: 3rem;
+  margin: 18px;
+}
+
+main section.cover button.start {
+  border: none;
+  color: white;
+  padding: 1.35rem 2.2rem;
+  font-size: 1.8rem;
+  border-radius: 1rem;
+  background-color: #3bf0e5;
+  cursor: pointer;
+}
+
+main section.cover div.filter {
+  width: 100%;
+  height: 90vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
 @media screen and (max-width: 380px) {
   h1 {
     font-size: 1.4rem;

@@ -48,6 +48,49 @@ header {
     }
 }
 
+main {
+    section.cover {
+        min-height: 90vh;
+        width: 100%;
+        background-image: url("../img/cover.jpeg");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        z-index: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-flow: column wrap;
+
+        h3 {
+            color: white;
+            font-size: 3rem;
+            margin: 18px;
+        }
+
+        button.start {
+            border: none;
+            color: white;
+            padding: 1.35rem 2.2rem;
+            font-size: 1.8rem;
+            border-radius: 1rem;
+            background-color: #3bf0e5;
+            cursor: pointer;
+        }
+
+        div.filter {
+            width: 100%;
+            height: 90vh;
+            background-color: rgba(0, 0, 0, 0.2);
+            position: absolute;
+            top: 0;
+            z-index: -1;
+        }
+    }
+
+}
+
 @media screen and (max-width: 380px) {
     h1 {
         font-size: 1.4rem;

@@ -174,11 +174,25 @@ main section.feature section.cards div.card {
   padding: 1rem;
 }
 
-main section.feature section.cards div.card img {
-  border-radius: 50%;
+main section.feature section.cards div.card .img-container {
+  overflow: hidden;
   width: 15vw;
   height: 15vw;
   margin: 1rem 0;
+  border-radius: 50%;
+}
+
+main section.feature section.cards div.card .img-container img {
+  border-radius: 50%;
+  width: 15vw;
+  height: 15vw;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+main section.feature section.cards div.card .img-container img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 main section.feature section.cards div.card h4 {
@@ -295,7 +309,11 @@ footer div.media a img {
 }
 
 @media screen and (max-width: 850px) {
-  main section.feature section.cards div.card img {
+  main section.feature section.cards div.card .img-container {
+    width: 45vw;
+    height: 45vw;
+  }
+  main section.feature section.cards div.card .img-container img {
     width: 45vw;
     height: 45vw;
   }

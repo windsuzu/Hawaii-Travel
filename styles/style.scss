@@ -120,11 +120,23 @@ main {
                 align-items: center;
                 padding: 1rem;
 
-                img {
-                    border-radius: 50%;
+                .img-container {
+                    overflow: hidden;
                     width: 15vw;
                     height: 15vw;
                     margin: 1rem 0;
+                    border-radius: 50%;
+
+                    img {
+                        border-radius: 50%;
+                        width: 15vw;
+                        height: 15vw;
+                        transition: all 0.2s;
+
+                        &:hover {
+                            transform: scale(1.2);
+                        }
+                    }
                 }
 
                 h4 {
@@ -226,9 +238,14 @@ footer {
         section.feature {
             section.cards {
                 div.card {
-                    img {
+                    .img-container {
                         width: 45vw;
                         height: 45vw;
+
+                        img {
+                            width: 45vw;
+                            height: 45vw;
+                        }
                     }
                 }
             }

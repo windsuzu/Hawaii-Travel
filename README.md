@@ -58,10 +58,22 @@
 這個 Hawaii Travel 是一個模擬夏威夷旅遊租借服務的網站，沒有實作任何功能性，主要用於練習 HTML 5, CSS 3 以及 SCSS。該網站的特色有:
 
 - 實作 FlexBox, Media Query 自適應 (RWD) 網頁
+  - Flex
+    - [HTML](https://github.com/windsuzu/Hawaii-Travel/blob/main/index.html#L50-L87)
+    - [SCSS](https://github.com/windsuzu/Hawaii-Travel/blob/main/styles/style.scss#L97-L162)
+  - [Media Query](https://github.com/windsuzu/Hawaii-Travel/blob/main/styles/style.scss#L219-L254)
 - 實作黏性導覽列 (sticky navigation bar)
+  - [HTML](https://github.com/windsuzu/Hawaii-Travel/blob/main/index.html#L19-L38)
+  - [SCSS](https://github.com/windsuzu/Hawaii-Travel/blob/main/styles/style.scss#L17-L54)
 - 實作一頁式展示頁面 (cover)
+  - [HTML](https://github.com/windsuzu/Hawaii-Travel/blob/main/index.html#L41-L48)
+  - [SCSS](https://github.com/windsuzu/Hawaii-Travel/blob/main/styles/style.scss#L57-L95)
 - 實作圖片縮放特效 (image scale effect)
+  - [HTML](https://github.com/windsuzu/Hawaii-Travel/blob/main/index.html#L57-L59)
+  - [SCSS](https://github.com/windsuzu/Hawaii-Travel/blob/main/styles/style.scss#L123-L140)
 - 實作頁尾 (footer)
+  - [HTML](https://github.com/windsuzu/Hawaii-Travel/blob/main/index.html#L89-L114)
+  - [SCSS](https://github.com/windsuzu/Hawaii-Travel/blob/main/styles/style.scss#L165-L217)
 
 Built With:
 
